@@ -1,0 +1,10 @@
+all:
+  hosts:
+    target1:
+      ansible_host: pierre.training.crafteo.io
+      ansible_user: ubuntu
+      ansible_password: xxx
+    target2:
+       ansible_host: pierre.training.crafteo.io
+       ansible_user: ubuntu
+       ansible_password: xxx
