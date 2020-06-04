@@ -8,7 +8,6 @@
 - name: copy index.html template
   become: true
   template:
-    # will lookup in roles templates/ by default
     src: index.html
     dest: /var/www/html/index.html
     owner: "{{ apache_data_owner }}"
