@@ -5,6 +5,7 @@ all:
       ansible_password: xxx
       ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
     pierre2.training.crafteo.io:
-       ansible_user: ubuntu
-       ansible_password: xxx
-       ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+      ansible_user: ubuntu
+      ansible_password: xxx
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+      

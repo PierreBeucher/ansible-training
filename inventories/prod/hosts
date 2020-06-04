@@ -1,0 +1,5 @@
+all:
+  hosts:
+    pierre2.training.crafteo.io:
+      ansible_user: ubuntu
+      ansible_password: xxx
