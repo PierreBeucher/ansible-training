@@ -1,3 +1,4 @@
 apache_hello_message: Hello from role default
 apache_data_owner: www-data
 apache_data_group: www-data
+apache_index_mode: 0600

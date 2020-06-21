@@ -12,4 +12,4 @@
     dest: /var/www/html/index.html
     owner: "{{ apache_data_owner }}"
     group: "{{ apache_data_group }}"
-    mode: 0600
+    mode: "{{ apache_index_mode }}"
