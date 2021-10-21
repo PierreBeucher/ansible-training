@@ -1,0 +1,16 @@
+# Playbook managing a simple Apache installation
+- hosts: all
+  tasks:
+
+  - name: install Apache server
+    debug:
+      msg: Replace this debug module by something which will install Apache package
+
+  # Retrieve service facts and show Apache version
+  - name: populate service facts
+    service_facts:
+  
+  - name: fail if Apache service not found
+    when: ansible_facts.services['apache2'] is not defined
+    fail:
+      msg: Apache service not found, did you install it?
