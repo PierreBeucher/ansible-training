@@ -1,0 +1,9 @@
+# all:
+#   hosts:
+#     you.training.crafteo.io:
+#       ansible_user: ubuntu
+#       ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+#   children:
+#     groupA:
+#       hosts:
+#         you.training.crafteo.io:

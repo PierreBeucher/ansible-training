@@ -1,6 +1,0 @@
-- hosts: all
-  tasks:
-    - name: Create hello world file
-      copy:
-        content: Hello world!
-        dest: /tmp/hello

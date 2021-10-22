@@ -1,0 +1,9 @@
+# Variables for group all
+# This file only contains key: values
+# for variable definition available in playbook run
+apache_custom_message: "Hello from group_vars all !"
+
+# Multiple variables can be set:
+#
+# foo: bar
+# myvar: somevalue 

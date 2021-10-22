@@ -1,0 +1,23 @@
+- hosts: all
+  vars:
+    apache_data_owner: www-data
+    apache_data_group: www-data
+  tasks:
+  - debug:
+      msg: "Apache custom message: {{ apache_custom_message }}"
+      
+  - name: install Apache2
+    become: true
+    apt:
+      name: apache2
+      state: present
+      update_cache: yes
+
+  - name: copy index.html
+    become: true
+    template:
+      src: index.html
+      dest: /var/www/html/index.html
+      owner: "{{ apache_data_owner }}"
+      group: "{{ apache_data_group }}"
+      mode: 0600
